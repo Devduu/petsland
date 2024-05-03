@@ -79,6 +79,43 @@
     gap: 1rem;
 }
 
+.contato-avaliacao{
+    gap: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.avaliacao{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.avaliacao h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.avaliacao-lista{
+    list-style: none;
+    gap: 1rem;
+}
+
+.avaliacao-lista li{
+    display: flex;
+    margin-top: 2em;
+    gap: 0.7em;
+}
+
+.nome-comentario{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
 @media screen and (max-width: 1060px) {
     #sobre{
         flex-wrap: wrap;
