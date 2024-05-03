@@ -79,10 +79,30 @@
     gap: 1rem;
 }
 
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
 .contato-avaliacao{
     gap: 3em;
     display: flex;
     flex-direction: column;
+}
+
+.contato-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.contato-lista li{
+    display: flex;
+    gap: 0.2em;
+    text-transform: uppercase;
 }
 
 .avaliacao{
