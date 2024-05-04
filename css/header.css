@@ -1,3 +1,12 @@
+#navMobile,
+label[for="menu"] {
+  display: none;
+}
+
+input[name="menu"] {
+  visibility: hidden;
+}
+
 #logo-fiapet {
   width: 87.049px;
   height: 84.909px;
@@ -9,29 +18,29 @@ header {
   height: 200px;
   display: flex;
   justify-content: space-between;
-  background: var( --primary-color);
+  background: var(--primary-color);
   padding: 1.5rem 2rem 0 2rem;
+  position: relative;
 }
 
-nav{  
+nav {
   color: #000;
   font-family: var(--fonte);
   font-size: 15px;
   font-weight: 700;
 }
 
-nav ul{
+nav ul {
   display: flex;
   align-items: center;
   gap: 2rem;
   list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: black;
 }
-
 
 .navegacao {
   color: #000;
@@ -88,7 +97,7 @@ nav ul li a{
 #img-pug {
   width: 20%;
   height: auto;
-  position: absolute; 
+  position: absolute;
   left: 73%;
   top: -90px;
 }
@@ -109,6 +118,62 @@ nav ul li a{
 /* mobile */
 
 @media screen and (max-width: 768px) {
+  label[for="menu"] {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    left: 1rem;
+    z-index: 999;
+    font-size: 2rem;
+  }
+
+  #navWeb {
+    display: none;
+  }
+
+  #navMobile {
+    transition: all linear 0.2s;
+    position: fixed;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: start;
+    padding-top: 40%;
+    font-size: 20px;
+    align-items: start;
+    padding-left: 1rem;
+    flex-direction: column;
+    height: 100svh;
+    width: 0;
+    visibility: collapse;
+  }
+
+  #bgMenuMobile {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    opacity: 0;
+  }
+
+  #menu:checked ~ #bgMenuMobile {
+    width: 100vw;
+    height: 100svh;
+    opacity: 1;
+    transform: all .2s linear;
+  }
+
+  #menu:checked ~ #navMobile {
+    width: 40vw;
+    visibility: visible;
+  }
+
   header {
     height: auto;
     flex-direction: column;
@@ -119,6 +184,7 @@ nav ul li a{
   nav ul {
     flex-direction: column;
     gap: 1rem;
+    align-items: start;
   }
 
   .navegacao {
@@ -129,16 +195,17 @@ nav ul li a{
     margin-bottom: 1rem;
   }
 
-  .titulo, .curva .titulo {
+  .titulo,
+  .curva .titulo {
     display: none;
   }
 
-  #img-pug{
+  #img-pug {
     display: none;
   }
 }
 
-@media screen and (max-width: 1150px) and (min-width: 767px){
+@media screen and (max-width: 1150px) and (min-width: 767px) {
   .titulo h1 {
     font-size: 40px;
   }
