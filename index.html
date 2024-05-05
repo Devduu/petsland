@@ -76,13 +76,42 @@
     </section>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">
+                <div class="item-swiper">
+                    <img src="./img/racoes/goldenGatos.png" alt="">
+                    <h4>Ração Golden Gatos</h4>
+                    <p>R$30,00</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item-swiper">
+                    <img src="./img/racoes/goldenGatos.png" alt="">
+                    <h4>Ração Golden Gatos</h4>
+                    <p>R$30,00</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item-swiper">
+                    <img src="./img/racoes/goldenGatos.png" alt="">
+                    <h4>Ração Golden Gatos</h4>
+                    <p>R$30,00</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item-swiper">
+                    <img src="./img/racoes/goldenGatos.png" alt="">
+                    <h4>Ração Golden Gatos</h4>
+                    <p>R$30,00</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item-swiper">
+                    <img src="./img/racoes/goldenGatos.png" alt="">
+                    <h4>Ração Golden Gatos</h4>
+                    <p>R$30,00</p>
+                </div>
+            </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 
     <section id="sobre">
@@ -263,7 +292,7 @@
                         <p>2 anos</p>
                     </div>
                 </div>
-                
+
                 <div class="adotar-card">
                     <img src="./img/gato-olhando.svg" alt="gato">
                     <div class="info-pets">
@@ -292,8 +321,8 @@
                         <p>2 anos</p>
                     </div>
                 </div>
-    
-             
+
+
             </div>
         </div>
     </section>
@@ -304,12 +333,12 @@
 
     <script>
         const swiper = new Swiper('.swiper', {
+            autoplay: true,
             direction: 'horizontal',
+            slidesPerView: 4,
+            spaceBetween: 30,
             loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            speed: 500,
         });
     </script>
 </body>

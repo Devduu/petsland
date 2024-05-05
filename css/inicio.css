@@ -1,16 +1,16 @@
-#inicio{
+#inicio {
   padding: 4rem 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner{
+.banner {
   display: flex;
   width: 70%;
 }
 
-.banner-informacoes{
+.banner-informacoes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,18 +20,18 @@
   /* justify-content: space-between; */
 }
 
-.banner-img{
+.banner-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner-informacoes a{
+.banner-informacoes a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 800;
   cursor: pointer;
@@ -44,14 +44,14 @@
   transition: 0.3s;
 }
 
-.banner-informacoes p{
+.banner-informacoes p {
   color: #000;
   font-size: 18px;
   padding: 1rem;
   font-weight: 400;
 }
 
-.banner-informacoes h2{
+.banner-informacoes h2 {
   color: #000;
   font-size: 46px;
   font-style: normal;
@@ -59,12 +59,26 @@
   text-align: center;
 }
 
-.banner-informacoes a:hover{
+.banner-informacoes a:hover {
   background-color: #2f70ad;
 }
 
-@media screen and (max-width: 1280px){
-  .banner{
+.swiper {
+  background-color: var(--primary-color);
+  height: calc(100% + 2rem);
+}
+
+.item-swiper {
+  padding: 1em 2em;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 15vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .banner {
     width: 100%;
   }
 }
