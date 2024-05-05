@@ -84,6 +84,18 @@
   width: 100%;
 }
 
+.adotar-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.adotar-img img{
+  width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
   .container-adotar{
     display: none;

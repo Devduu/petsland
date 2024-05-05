@@ -63,8 +63,9 @@
   background-color: #2f70ad;
 }
 
-.swiper {
+.swiper1 {
   background-color: var(--primary-color);
+  overflow: hidden;
 }
 
 .item-swiper {

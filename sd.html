@@ -75,54 +75,15 @@
             </div>
         </div>
     </section>
-    <div class="swiper1">
+    <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="item-swiper">
-                    <img src="./img/produtos-swiper-inicio/cookie-cachorro.svg" alt="">
-                    <div>
-                        <h4>Ração Golden Gatos</h4>
-                        <p>R$30,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item-swiper">
-                    <img src="./img/produtos-swiper-inicio/cookie-cachorro.svg" alt="">
-                    <div>
-                        <h4>Ração Golden Gatos</h4>
-                        <p>R$30,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item-swiper">
-                    <img src="./img/produtos-swiper-inicio/cookie-cachorro.svg" alt="">
-                    <div>
-                        <h4>Ração Golden Gatos</h4>
-                        <p>R$30,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item-swiper">
-                    <img src="./img/produtos-swiper-inicio/cookie-cachorro.svg" alt="">
-                    <div>
-                        <h4>Ração Golden Gatos</h4>
-                        <p>R$30,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item-swiper">
-                    <img src="./img/produtos-swiper-inicio/cookie-cachorro.svg" alt="">
-                    <div>
-                        <h4>Ração Golden Gatos</h4>
-                        <p>R$30,00</p>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 
     <section id="sobre">
@@ -440,7 +401,7 @@
                         <div class="swiper-button-prev"></div>
                 </div>
             </div>
-
+        
         </div>
     </section>
 
@@ -451,7 +412,18 @@
     </footer>
 
     <script>
-        const swiper1 = new Swiper('.swiper1', {
+        
+        const swiper2 = new Swiper('.cont-swiper2', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const swiper = new Swiper('.swiper', {
             autoplay: true,
             direction: 'horizontal',
             slidesPerView: 4,
@@ -459,18 +431,18 @@
             loop: true,
             speed: 500,
         });
-
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 'auto',
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
     </script>
 </body>
 
 </html>
+
+.adotar-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.adotar-img img{
+  width: 100%;
+}
