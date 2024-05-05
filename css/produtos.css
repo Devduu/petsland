@@ -59,7 +59,7 @@
     height: 350px;
     padding: 1rem;
     gap: 1rem;
-
+    position: relative;
     transform: translateZ(0);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     backface-visibility: hidden;
@@ -70,14 +70,28 @@
 .cor-preco{
     color: green;
 }
-/* Rating dos cards que nao funfou
+/* Rating dos cards que nao funfou */
 .rating{
-    background-color: red;
     width: 25%;
     display: flex;
     align-items: center;
-    justify-content: end;
-    margin-top: 0;
-    
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 0;
 }
-*/
+
+.off {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: fit-content;
+    padding-inline: 10px;
+    background: var(--primary-color);
+}
+
+.off span {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+}
