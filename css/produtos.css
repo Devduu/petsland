@@ -1,0 +1,39 @@
+#produtos{
+    margin-bottom: 3em;
+}
+
+.filtros-cards{
+    display: flex;
+}
+
+.produtos-titulo{
+    width: 33%;
+    padding: 3em;
+}
+
+.produtos-titulo h2{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+
+}
+
+.filtros ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+}
+
+.filtros h4 {
+    margin-bottom: 1em;  
+}
+
+
+
+.caixa-filtros{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5em;
+    gap: 1em;
+}
+
