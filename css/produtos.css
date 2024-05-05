@@ -7,14 +7,24 @@
 }
 
 .produtos-titulo{
-    width: 33%;
-    padding: 3em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    
 }
 
 .produtos-titulo h2{
     font-size: 2.2em;
     margin-bottom: 10px;
-
+    
+}
+.produtos-titulo p{
+    display: flex;
+    flex-direction: column;
+    width: 605px;
+    
 }
 
 .filtros ul{
@@ -37,3 +47,37 @@
     gap: 1em;
 }
 
+
+
+.produtos-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #fff;
+    justify-content: center;
+    width: 206px;
+    height: 350px;
+    padding: 1rem;
+    gap: 1rem;
+
+    transform: translateZ(0);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cor-preco{
+    color: green;
+}
+/* Rating dos cards que nao funfou
+.rating{
+    background-color: red;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 0;
+    
+}
+*/
