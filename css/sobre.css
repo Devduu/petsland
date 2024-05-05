@@ -168,8 +168,8 @@
         justify-content: center;
     }
 
-    .banner-img img{
-        display: none;
+    .banner{
+        display: grid;
     }
 
     .avaliacao{
