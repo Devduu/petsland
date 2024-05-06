@@ -58,6 +58,7 @@
             </div>
 
             <img id="img-pug" src="img/pug.svg" alt="pug">
+
         </div>
     </div>
 
@@ -71,7 +72,38 @@
                 <a href="">Adote agora</a>
             </div>
             <div class="banner-img">
-                <img src="img/gato.svg" alt="gato">
+
+                <img id="gatoweb" src="img/gato.svg" alt="gato">
+
+                <div class="banner-slides">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner-div">
+                            <div>
+                                <img src="./img/gato-laranja/cachorro-orelha-levantada.svg" alt="gato">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  banner-div">
+                            <div>
+                                <img src="./img/gato-laranja/pastor-alemao.svg" alt="gato">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  banner-div">
+                            <div>
+                                <img src="./img/gato-laranja/gato-olhando.svg" alt="gato">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  banner-div">
+                            <div>
+                                <img src="./img/gato-laranja/golden-adulto-sorrindo.svg" alt="gato">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  banner-div">
+                            <div>
+                                <img src="./img/gato-laranja/golden-fillhote.svg" alt="gato">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -149,9 +181,12 @@
         <div class="container-sobre">
             <div class="novo-pet">
                 <h2 class="texto-pet"> Seu novo amigo para o bem-estar do seu pet!</h2>
-                <p class="texto-pet2">Fundado em 2024, a FIAPET é um pet shop que nasceu com a missão de oferecer aos
-                    seus clientes uma experiência completa e de alta qualidade em produtos e serviços para o cuidado dos
-                    seus animais de estimação. Somos apaixonados por animais e acreditamos que eles merecem o melhor,
+                <p class="texto-pet2">Fundado em 2024, a FIAPET é um pet shop que nasceu com a missão de oferecer
+                    aos
+                    seus clientes uma experiência completa e de alta qualidade em produtos e serviços para o cuidado
+                    dos
+                    seus animais de estimação. Somos apaixonados por animais e acreditamos que eles merecem o
+                    melhor,
                     por isso, nos dedicamos a fornecer tudo o que você precisa para cuidar da saúde, felicidade e
                     bem-estar do seu pet.</p>
             </div>
@@ -274,9 +309,11 @@
                         <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro">
                             <label>Cachorro</label>
                         </li>
-                        <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro"> <label>Gato</label>
+                        <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro">
+                            <label>Gato</label>
                         </li>
-                        <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro"> <label>Peixe</label>
+                        <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro">
+                            <label>Peixe</label>
                         </li>
                         <li><input type="checkbox" id="checkbox_produtos" name="produtos_cachorro">
                             <label>Coelho</label>
@@ -297,7 +334,8 @@
                                 100,00(108)</label></li>
                         <li><input type="radio" id="radio_produtos" name="produtos_preco"> <label>R$ 100,00 -
                                 200,00(63)</label></li>
-                        <li><input type="radio" id="radio_produtos" name="produtos_preco"> <label>R$ 200,00(36)</label>
+                        <li><input type="radio" id="radio_produtos" name="produtos_preco"> <label>R$
+                                200,00(36)</label>
                         </li>
                     </ul>
                 </div>
@@ -623,6 +661,15 @@
     </footer>
 
     <script>
+        const slide = new Swiper('.banner-slides', {
+            autoplay: true,
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            speed: 600,
+        });
+
         const swiper1 = new Swiper('.swiper1', {
             autoplay: true,
             direction: 'horizontal',

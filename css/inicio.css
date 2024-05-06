@@ -8,6 +8,7 @@
 .banner {
   display: flex;
   width: 70%;
+  position: relative;
 }
 
 .banner-informacoes {
@@ -89,14 +90,61 @@
   place-items: start !important;
 }
 
+.banner-slides {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  #inicio {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-informacoes {
+    width: 100vw;
+    align-items: center;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
   .item-swiper {
     width: 20vw;
   }
+  .banner-slides {
+    display: block;
+    margin-block: 2rem;
+  }
+
+  .banner-img {
+    display: block !important;
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  #gatoweb {
+    display: none;
+  }
+
+  .banner-div {
+    display: grid !important;
+    place-items: center !important;
+    height: fit-content !important;
+  }
+
+  .banner-div img {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
   .banner {
     width: 100%;
+    flex-direction: column;
   }
 }

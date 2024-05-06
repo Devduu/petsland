@@ -1,6 +1,7 @@
 #navMobile,
 label[for="menu"] {
   display: none;
+  position: relative;
 }
 
 input[name="menu"] {
@@ -133,7 +134,7 @@ nav ul li a {
   }
 
   #navMobile {
-    transition: all linear 0.2s;
+    transition: width linear 0.2s !important;
     position: fixed;
     background-color: var(--primary-color);
     top: 0;
@@ -141,7 +142,6 @@ nav ul li a {
     z-index: 99;
     display: flex;
     justify-content: start;
-    padding-top: 40%;
     font-size: 20px;
     align-items: start;
     padding-left: 1rem;
@@ -149,6 +149,10 @@ nav ul li a {
     height: 100svh;
     width: 0;
     visibility: collapse;
+  }
+
+  #navMobile ul {
+    margin-top: 80%;
   }
 
   #bgMenuMobile {
