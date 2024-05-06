@@ -113,4 +113,8 @@
         height: 250px;
     }
 
+    .produtos-titulo p{
+        width: 80%;
+    }
+
 }
