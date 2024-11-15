@@ -9,9 +9,20 @@ input[name="menu"] {
 }
 
 #logo-fiapet {
-  width: 87.049px;
+  width: 200px;
   height: 84.909px;
   flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  /*borda*/
+  border-radius: 10px;
+}
+#logo-petsland {
+  width: 84.909px;
+  height: 84.909px;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  /*borda*/
+  border-radius: 10px;
 }
 
 header {
@@ -40,7 +51,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .navegacao {
@@ -80,7 +91,7 @@ nav ul li a {
 }
 
 .titulo h1 {
-  color: #000;
+  color: #fff;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -88,7 +99,7 @@ nav ul li a {
 }
 
 .titulo h2 {
-  color: #000;
+  color: #fff;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;

@@ -87,7 +87,7 @@
     left: 0;
     width: fit-content;
     padding-inline: 10px;
-    background: var(--primary-color);
+    background: var(--secundary-color);
 }
 
 .off span {
