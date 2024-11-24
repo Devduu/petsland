@@ -84,6 +84,14 @@
   width: 8vw;
   height: auto;
 }
+#caminha-du-2{
+  width: 12vw;
+  height: 230px;
+}
+#caminha-du-3{
+  width: 12vw;
+  height: 190px;
+}
 
 .item-swiper div {
   display: grid;

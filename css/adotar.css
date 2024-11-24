@@ -94,6 +94,15 @@
   width: 100%;
 }
 
+#racao-whiskas{
+  width: 250px;
+}
+
+#pirikita{
+  width: 250px;
+  
+}
+
 
 @media screen and (max-width: 768px) {
   .container-adotar{
